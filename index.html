@@ -1,3 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0066cc">
+<title>SMART WATER APP</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#eaf6ff;
+ color:#123;
+}
+header{
+ background:linear-gradient(135deg,#003c91,#009de0);
+ color:white;
+ text-align:center;
+ padding:25px 12px;
+ border-radius:0 0 25px 25px;
+}
+.logo{
+ width:85px;height:85px;
+ margin:auto;
+ background:white;
+ color:#008bd0;
+ border-radius:50%;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ font-size:48px;
+ box-shadow:0 4px 15px #002b66;
+}
+header h1{font-size:24px;margin:12px 0 5px}
+header p{margin:6px}
+.container{padding:15px;max-width:550px;margin:auto}
+.card{
+ background:white;
+ padding:17px;
+ margin:14px 0;
+ border-radius:18px;
+ box-shadow:0 4px 14px #00508020;
+}
+h2{color:#0066aa;text-align:center}
+.hero{
+ background:linear-gradient(120deg,#0074c8,#00b8dc);
+ color:white;
+ text-align:center;
+ padding:23px;
+ border-radius:18px;
+}
+.hero h2{color:white}
+.product{
+ display:flex;
+ justify-content:space-between;
+ padding:14px 5px;
+ border-bottom:1px solid #ddd;
+ font-size:17px;
+}
+.price{color:#008442;font-weight:bold}
+.offer{
+ background:#fff1c7;
+ text-align:center;
+ padding:18px;
+ border-radius:15px;
+ color:#805000;
+}
+input,select,textarea{
+ width:100%;
+ padding:14px;
+ margin:8px 0;
+ border:1px solid #bbb;
+ border-radius:10px;
+ font-size:16px;
+ background:white;
+}
+button,.action{
+ display:block;
+ width:100%;
+ border:0;
+ border-radius:12px;
+ padding:14px;
+ text-align:center;
+ text-decoration:none;
+ font-size:17px;
+ font-weight:bold;
+ color:white;
+ background:#008b50;
+ margin-top:10px;
+}
+.call{background:#0077c8}
+.whatsapp{background:#13a94a}
+nav{
+ display:flex;
+ gap:8px;
+ justify-content:space-around;
+ background:white;
+ padding:12px 5px;
+ position:sticky;
+ top:0;
+ z-index:10;
+ box-shadow:0 2px 8px #0002;
+}
+nav a{
+ text-decoration:none;
+ color:#0066aa;
+ font-size:13px;
+ font-weight:bold;
+}
+footer{
+ background:#003e78;
+ color:white;
+ text-align:center;
+ padding:22px;
+ margin-top:20px;
+}
+.small{text-align:center;color:#555;font-size:13px}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">💧</div>
+<h1>PUSHPA FILTER WATER SUPPLY</h1>
+<p>SMART WATER BOOKING APP</p>
+<p>शुद्ध पानी • स्वस्थ परिवार</p>
+<p>🏠 HOME & OFFICE DELIVERY</p>
+</header>
+
+<nav>
+<a href="#home">🏠 Home</a>
+<a href="#products">💧 पानी</a>
+<a href="#booking">📋 Booking</a>
+<a href="#contact">📞 Contact</a>
+</nav>
+
+<main class="container">
+
+<section id="home">
+<div class="hero">
+<h2>आपका स्वागत है!</h2>
+<h3>शुद्ध RO पानी अब आपके दरवाजे पर</h3>
+<p>तेज और भरोसेमंद होम डिलीवरी</p>
+<a class="action whatsapp"
+href="https://wa.me/918210335621">
+अभी WhatsApp करें
+</a>
+</div>
+</section>
+
+<section id="products" class="card">
+<h2>💧 हमारे पानी का रेट</h2>
+<div class="product">
+<span>20 लीटर RO जार</span>
+<span class="price">₹20</span>
+</div>
+<div class="product">
+<span>5 लीटर पानी</span>
+<span class="price">₹7</span>
+</div>
+<div class="product">
+<span>30 दिन का पैकेज</span>
+<span class="price">₹600</span>
+</div>
+</section>
+
+<section class="offer">
+<h2>🎁 स्पेशल ऑफर</h2>
+<h3>20 लीटर थर्मस बिल्कुल मुफ्त!</h3>
+<p>5 किलोमीटर तक डिलीवरी चार्ज मुफ्त</p>
+<p>नियम एवं शर्तें लागू</p>
+</section>
+
+<section id="booking" class="card">
+<h2>📋 ONLINE WATER BOOKING</h2>
+
+<form id="orderForm">
+
+<input id="customer" type="text"
+placeholder="ग्राहक का पूरा नाम" required>
+
+<input id="phone" type="tel"
+placeholder="मोबाइल नंबर" maxlength="10" required>
+
+<textarea id="address"
+placeholder="पूरा डिलीवरी पता लिखें" required></textarea>
+
+<select id="item" required>
+<option value="">पानी का प्रकार चुनें</option>
+<option>20 लीटर RO जार - ₹20</option>
+<option>5 लीटर पानी - ₹7</option>
+<option>30 दिन पैकेज - ₹600</option>
+</select>
+
+<input id="qty" type="number"
+min="1" value="1" required>
+
+<button type="submit">बुकिंग करें</button>
+
+</form>
+<p class="small">बुकिंग WhatsApp पर भेजी जाएगी।</p>
+</section>
+
+<section id="contact" class="card">
+<h2>📞 हमसे संपर्क करें</h2>
+<p>व्यवसाय: Pushpa Filter Water Supply</p>
+<p>मोबाइल: 8210335621</p>
+<p>पता: गावपुर योगी चौक, उजियारपुर, समस्तीपुर, बिहार</p>
+<p>समय: सुबह 6 बजे से रात 9 बजे तक</p>
+
+<a class="action call"
+href="tel:8210335621">📞 कॉल करें</a>
+
+<a class="action whatsapp"
+href="https://wa.me/918210335621">
+WhatsApp पर संपर्क करें
+</a>
+</section>
+
+</main>
+
+<footer>
+<h3>PUSHPA FILTER WATER SUPPLY</h3>
+<p>शुद्ध पानी – स्वस्थ जीवन</p>
+<p>धन्यवाद! 🙏</p>
+</footer>
+
+<script>
+document.getElementById("orderForm").addEventListener("submit",function(e){
+ e.preventDefault();
+
+ let name=document.getElementById("customer").value.trim();
+ let phone=document.getElementById("phone").value.trim();
+ let address=document.getElementById("address").value.trim();
+ let item=document.getElementById("item").value;
+ let qty=document.getElementById("qty").value;
+
+ if(!/^[0-9]{10}$/.test(phone)){
+  alert("कृपया सही 10 अंकों का मोबाइल नंबर लिखें");
+  return;
+ }
+
+ let message=
+ "PUSHPA FILTER WATER SUPPLY - NEW BOOKING\n\n"+
+ "नाम: "+name+"\n"+
+ "मोबाइल: "+phone+"\n"+
+ "पता: "+address+"\n"+
+ "प्रोडक्ट: "+item+"\n"+
+ "मात्रा: "+qty;
+
+ window.location.href=
+ "https://wa.me/918210335621?text="+
+ encodeURIComponent(message);
+});
+</script>
+
+</body>
+</html>
 पुष्पा फिल्टर वॉटर सप्लाई 
 पुष्पा फिल्टर वाटर सप्लाई का नाम
 ग्राहक का नाम और मोबाइल नंबर
